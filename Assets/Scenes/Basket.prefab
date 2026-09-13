@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1942293728125796212}
   - component: {fileID: 8472108275734352910}
   - component: {fileID: 5244452026413747366}
+  - component: {fileID: 7296251213962723058}
+  - component: {fileID: 5742734342302774128}
   m_Layer: 0
   m_Name: Basket
   m_TagString: Untagged
@@ -140,3 +142,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7296251213962723058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4468126621194150612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed15de9c83609c4b9a0b82a51677d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Basket
+--- !u!114 &5742734342302774128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4468126621194150612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed15de9c83609c4b9a0b82a51677d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Basket
