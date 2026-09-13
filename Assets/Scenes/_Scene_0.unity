@@ -320,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basket
       objectReference: {fileID: 0}
+    - target: {fileID: 4468126621194150612, guid: 34698726abe709e40aab2c80a161e201, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7423815901279566273, guid: 34698726abe709e40aab2c80a161e201, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -377,6 +381,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 604204995674226815, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052576076826074033, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122350646141089885, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5723515595199163035, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -417,9 +433,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7077053922837013773, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8221834446945936859, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
       propertyPath: speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221834446945936859, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 1246740316150943048, guid: 10998e4e3162c014eb97a560fb4eaeb7, type: 3}
+    - target: {fileID: 8221834446945936859, guid: 140e7fc751ed659429c15ef372d3fd4e, type: 3}
+      propertyPath: changeDirChance
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
