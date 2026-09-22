@@ -1,8 +1,16 @@
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Basket : MonoBehaviour
 {
-    void Start() {} // We’ll add code to Start() in Code Listing 29.12
+    public ScoreCounter scoreCounter;
+    void Start() {
+     // Find a GameObject named ScoreCounter in the Scene Hierarchy
+    GameObject scoreGO = GameObject.Find("ScoreCounter");         // b
+         // Get the ScoreCounter (Script) component of scoreGO
+    scoreCounter = scoreGO.GetComponent<ScoreCounter>();            // c
+
+    } // We’ll add code to Start() in Code Listing 29.12
 
     void Update()
     {
@@ -21,5 +29,19 @@ public class Basket : MonoBehaviour
         Vector3 pos = this.transform.position;
         pos.x = mousePos3D.x;
         this.transform.position = pos;
+     }
+
+    void OnCollisionEnter(Collision coll)
+    {                             // a
+         // Find out what hit this basket
+ GameObject collidedWith = coll.gameObject;                        // b
+         if (collidedWith.CompareTag("Apple"))
+        {                         // c
+ Destroy(collidedWith);
+             // Increase the score
+         scoreCounter.score += 100;
+             HighScore.TRY_SET_HIGH_SCORE( scoreCounter.score );
+
+        }
      }
 }
